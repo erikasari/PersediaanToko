@@ -14,15 +14,17 @@ public class Transaction implements Parcelable {
     private int amount;
     private String stock;
     private Type type;
+    public String photo;
 
     public Transaction() {
     }
 
-    public Transaction(String description, int amount, String stok, Type type) {
+    public Transaction(String description,String photo, int amount, String stok, Type type) {
         this.description = description;
         this.amount = amount;
         this.stock = stok;
         this.type = type;
+        this.photo = photo;
     }
 
     public String getDescription() {
@@ -57,6 +59,14 @@ public class Transaction implements Parcelable {
         this.stock = stock;
     }
 
+//    public int getPhoto() {
+//        return photo;
+//    }
+//
+//    public void setPhoto(String photo) {
+//        this.photo = photo;
+//    }
+
     @Override
     public int describeContents() {
         return 0;
@@ -65,6 +75,7 @@ public class Transaction implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(this.description);
+        dest.writeString(this.photo);
         dest.writeInt(this.amount);
         dest.writeString(this.stock);
         dest.writeInt(this.type == null ? -1 : this.type.ordinal());
@@ -72,6 +83,7 @@ public class Transaction implements Parcelable {
 
     protected Transaction(Parcel in) {
         this.description = in.readString();
+        this.photo = in.readString();
         this.amount = in.readInt();
         this.stock = in.readString();
         int tmpType = in.readInt();

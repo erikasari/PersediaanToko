@@ -72,6 +72,7 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
             amountText.setText(MainActivity.generateRupiah(item.getAmount()));
             stockText.setText(item.getStock());
 
+
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

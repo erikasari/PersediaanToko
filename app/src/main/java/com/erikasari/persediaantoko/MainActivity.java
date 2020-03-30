@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity implements TransactionAdapte
 
     public static final String TRANSACTION_KEY = "TRANSACTION";
     public static final String INDEX_KEY = "INDEX";
+    public static final String PHOTO_KEY = "PHOTO";
+
     public static final int INSERT_REQUEST = 1;
     public static final int UPDATE_REQUEST = 2;
 

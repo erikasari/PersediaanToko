@@ -23,6 +23,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#DDA0DD"
             >
 
             <TextView
@@ -33,6 +34,7 @@
                 android:layout_marginTop="84dp"
                 android:textSize="21sp"
                 android:textStyle="bold"
+                android:textColor="#FFFFFF"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.9"
                 app:layout_constraintStart_toStartOf="parent"
