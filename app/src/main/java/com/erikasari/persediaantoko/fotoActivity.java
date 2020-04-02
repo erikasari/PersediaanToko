@@ -1,6 +1,8 @@
 package com.erikasari.persediaantoko;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -13,7 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class fotoActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +23,7 @@ public class fotoActivity extends AppCompatActivity {
         RecyclerView teamsView = findViewById(R.id.rv_teams);
 
         List<foto> teams = new ArrayList<>();
-        teams.add(new foto("https://www.zalora.co.id/adidas-adidas-originals-superstar-shoes-white-2023221.html","women shoes sneakers"));
+        teams.add(new foto("https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/360px-Liverpool_FC.svg.png","women shoes sneakers"));
         teams.add(new foto("https://im.berrybenka.com/assets/upload/product/zoom/233479_adidas-superstar-bounce-bb2939-women_light-salmon_BGCRT.jpg", "women light salmon"));
         teams.add(new foto("https://berrybenka.com/shoes/sneakers/126466/womens-nike-air-max-2016-dark-purple-dust-white-pink-pow?trc_sale=shoes+sneakers", "sneakers white pink"));
         teams.add(new foto("https://berrybenka.com/shoes/sneakers/247974/adidas-cfliteracerw-bb9841-women?trc_sale=shoes+sneakers","women shoes sneakers"));
@@ -37,7 +38,13 @@ public class fotoActivity extends AppCompatActivity {
         fotoAdapter adapter = new fotoAdapter(this, teams);
         teamsView.setAdapter(adapter);
 
+
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         teamsView.setLayoutManager(layoutManager);
+    }
+
+    public void handleDetail(View view) {
+        Intent intent = new Intent(this,DetailActivity.class);
+        startActivity(intent);
     }
 }

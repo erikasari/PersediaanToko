@@ -161,7 +161,6 @@ public class MainActivity extends AppCompatActivity implements TransactionAdapte
     }
 
     public void handleDataGambar(MenuItem item) {
-        session.isLoggedIn();
         Intent intent = new Intent(this,fotoActivity.class);
         startActivity(intent);
     }
