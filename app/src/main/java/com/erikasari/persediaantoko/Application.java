@@ -12,7 +12,7 @@ public class Application extends android.app.Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        account = new Account("Selamat Datang Admin");
+        account = new Account("APLIKASI PENJUALAN SEPATU");
         session = new Session(this);
         produk = new Session(this);
     }

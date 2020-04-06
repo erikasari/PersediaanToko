@@ -29,10 +29,7 @@ public class Session {
         preferences.edit().putString(TOKEN_KEY, token)
                 .apply();
     }
-    public void setGambar(String token) {
-        preferences.edit().putString(TOKEN_KEY, token)
-                .apply();
-    }
+
 
     public boolean isKeepUsername() {
         return preferences.getBoolean(KEEP_USERNAME_KEY, false);
@@ -55,4 +52,5 @@ public class Session {
         preferences.edit().remove(TOKEN_KEY)
                 .apply();
     }
+
 }

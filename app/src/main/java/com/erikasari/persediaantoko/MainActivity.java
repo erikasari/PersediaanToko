@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements TransactionAdapte
         });
 
         account = Application.getAccount();
-        welcomeText.setText(String.format("Welcome %s", account.getName()));
+        welcomeText.setText(String.format("%s", account.getName()));
 //        balanceText.setText(generateRupiah(account.getBalance()));
 
         adapter = new TransactionAdapter(account.getTransactions(), this);
@@ -166,7 +166,7 @@ public class MainActivity extends AppCompatActivity implements TransactionAdapte
     }
     public void handleDataProduk(MenuItem item) {
         session.isLoggedIn();
-        Intent intent = new Intent(this,MainActivity.class);
+        Intent intent = new Intent(this,dataActivity.class);
         startActivity(intent);
     }
 }

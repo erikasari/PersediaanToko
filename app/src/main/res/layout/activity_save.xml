@@ -21,7 +21,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#DDA0DD"
+            android:background="#FFA500"
             >
 
             <TextView
@@ -32,9 +32,9 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="60dp"
                 android:layout_marginBottom="10dp"
-                android:text="Tambah Data Barang"
+                android:text="TAMBAH DATA BARANG"
                 android:textColor="#FFFFFF"
-                android:textSize="21sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

@@ -16,6 +16,7 @@
         <activity android:name=".LoginActivity"></activity>
         <activity android:name=".SaveActivity"/>
         <activity android:name=".fotoActivity"/>
+        <activity android:name=".dataActivity"/>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

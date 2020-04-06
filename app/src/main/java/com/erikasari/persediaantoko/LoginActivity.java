@@ -20,9 +20,10 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        session = com.erikasari.persediaantoko.Application.getSession();
+        session =Application.getSession();
         usernameInput = findViewById(R.id.username_input);
         passwordInput = findViewById(R.id.password_input);
+
     }
 
     public void handleLogin(View view) {

@@ -5,35 +5,37 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	tools:context=".fotoActivity"
+	tools:context=".dataActivity"
 	>
+
 
 	<TextView
 		android:id="@+id/text_title"
 		android:layout_width="385dp"
 		android:layout_height="56dp"
 		android:layout_marginStart="16dp"
-		android:layout_marginTop="16dp"
+		android:layout_marginTop="8dp"
 		android:layout_marginEnd="16dp"
-		android:background="#FFA500"
-		android:text="DAFTAR SEPATU TERSEDIA"
+		android:text="DAFTAR SEPATU "
 		android:textAlignment="center"
-		android:textColor="#FFFFFF"
 		android:textSize="24sp"
+		android:textColor="#FFFFFF"
 		android:textStyle="bold"
+		android:background="#FFA500"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="1.0"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent" />
 
-	<androidx.recyclerview.widget.RecyclerView
-		android:id="@+id/rv_teams"
-		android:layout_width="0dp"
-		android:layout_height="0dp"
-		android:background="@color/cardview_light_background"
-		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/text_title"
-		/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_teams"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
