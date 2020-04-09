@@ -5,24 +5,25 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
+	android:background="@drawable/bg6"
 	tools:context=".fotoActivity"
 	>
 
 	<TextView
 		android:id="@+id/text_title"
-		android:layout_width="385dp"
+		android:layout_width="364dp"
 		android:layout_height="56dp"
 		android:layout_marginStart="16dp"
-		android:layout_marginTop="16dp"
+		android:layout_marginTop="4dp"
 		android:layout_marginEnd="16dp"
-		android:background="#FFA500"
+		android:background="#3700B3"
 		android:text="DAFTAR SEPATU TERSEDIA"
 		android:textAlignment="center"
 		android:textColor="#FFFFFF"
 		android:textSize="24sp"
 		android:textStyle="bold"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="1.0"
+		app:layout_constraintHorizontal_bias="0.466"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent" />
 

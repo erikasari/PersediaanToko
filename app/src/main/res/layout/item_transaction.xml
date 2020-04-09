@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="4dp"
+    android:background="@drawable/bg6"
     app:cardElevation="4dp"
     app:cardCornerRadius="4dp"
     >
@@ -17,14 +18,14 @@
         android:orientation="horizontal"
         android:padding="16dp"
         android:weightSum="4"
-        android:background="#FFE4B5">
+        android:background="#DCDCDC">
 
         <TextView
             android:id="@+id/text_description"
             android:layout_width="55dp"
             android:layout_height="43dp"
             android:layout_weight="2"
-            android:textSize="15sp"
+            android:textSize="13sp"
             android:textStyle="bold"
             tools:text="Description of transactions" />
         <TextView

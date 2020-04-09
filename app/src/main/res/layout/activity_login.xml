@@ -64,7 +64,6 @@
         android:textColor="	#FFFFFF"
         android:textStyle="bold"
         android:background="#1E90FF"
-        android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password_input" />
 

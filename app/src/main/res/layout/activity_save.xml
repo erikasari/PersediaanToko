@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SaveActivity"
-    >
+    android:background="@drawable/bg6"
+    tools:context=".SaveActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/view_information"
@@ -15,14 +14,12 @@
         app:layout_constraintBottom_toTopOf="@+id/rv_transactions"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FFA500"
-            >
+            android:background="#3700B3">
 
             <TextView
                 android:id="@+id/text_welcome"
@@ -50,10 +47,10 @@
         android:layout_width="328dp"
         android:layout_height="70dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="200dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintHorizontal_bias="0.692"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -110,15 +107,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
         android:layout_marginEnd="16dp"
-        android:background="#1E90FF"
-        android:textColor="#FFFFFF"
         android:layout_marginBottom="8dp"
-        android:text="Submit"
+        android:background="#1E90FF"
         android:onClick="handleSubmit"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <RadioGroup
         android:id="@+id/group_type"
@@ -151,6 +147,18 @@
             tools:layout_editor_absoluteX="85dp"
             tools:layout_editor_absoluteY="208dp" />
     </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="460dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/header1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_information" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -4,6 +4,7 @@
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
+	android:background="@drawable/bg6"
 	android:layout_height="match_parent"
 	tools:context=".dataActivity"
 	>
@@ -21,7 +22,7 @@
 		android:textSize="24sp"
 		android:textColor="#FFFFFF"
 		android:textStyle="bold"
-		android:background="#FFA500"
+		android:background="#3700B3"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent" />

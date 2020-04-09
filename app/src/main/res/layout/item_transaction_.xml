@@ -17,7 +17,7 @@
         android:orientation="horizontal"
         android:padding="16dp"
         android:weightSum="4"
-        android:background="@android:color/holo_orange_light">
+        android:background="#F0F8FF">
 
         <TextView
             android:id="@+id/text_description"
